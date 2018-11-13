@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+html, body { height:100% } /* 브라우저의 높이값 인식 */
+
+body { font-family:Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif; font-weight: bold;}
+
+.wrap { height:100%; width:100%; overflow:hidden;}
+
+/* 이미지 */
+.img { width:400%; height:100%; }
+.img li { float:left; width:25%; height:100%; background-size:cover; background-position:50%; text-indent:-999%; }
+.img .i1 { background-image:url(images/720.jpg); }
+.img .i2 { background-image:url(images/sisters-931151_1920.jpg); }
+.img .i3 { background-image:url(images/girl-3141766_1920.jpg); }
+.img .i4 { background-image:url(images/girl-2739669_1920.jpg); }
+
+/* 버튼 */
+.btn {position:absolute; right:0; left:0; bottom:30px; margin:auto; height:20px;width:112px}
+.btn li { float:left; border-radius:50%; cursor:pointer; width:20px; height:20px; background:rgba(255,255,255,.7);  text-indent:-999%; margin:0 4px; }
+.btn li:hover { background:rgba(255,255,255,1); }
+.on {border:2px solid #999; box-sizing:border-box;}
+
+/* 사이드바 */
+nav { position:absolute;top:0; left:0; height:100% }
+.open, .close { width:40px; height:40px; text-indent:-999%; background:url(images/nav.png) no-repeat; position:absolute; top:10px;}
+.open { left:20px; }
+.navG {position:relative; width:240px; height:100%; background:#eee; overflow:hidden;left:-240px;}
+.navG .close { right:10px; }
+.navG #gnb { margin:150px 0; line-height:2; text-align:center;  }
